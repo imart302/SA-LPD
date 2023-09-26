@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="conversion-form">
+        <div class="inputs-set">
+          <div class="input-set">
+            <label for="°C">Grados °C: </label>
+            <input id="input-degree" type="number" id="degree-value" />
+          </div>
+          <div class="radio-set">
+            <label for="dF">Fahrenheit</label>
+            <input
+              id="dF"
+              type="radio"
+              name="conversion"
+              placeholder="Fahrenheit"
+              checked
+              value="F"
+            />
+            <label for="dF">Kelvin</label>
+            <input
+              id="dK"
+              type="radio"
+              name="conversion"
+              placeholder="Kelvin"
+              value="K"
+            />
+          </div>
+          <button type="submit">Calcular</button>
+        </div>
+      </form>
+
+      <div class="result container">
+        <span>Result: </span><span id="id-result"></span>
+        <div>
+          <h3 id="result-out"></h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
