@@ -47,7 +47,7 @@ function renderConversion(result){
 }
 
 conversionForm.addEventListener('submit', (ev) => {
-  ev.preventDefault();
+  ev.preventDefault(); // prevent reload the page (default behavior of forms)
 
   if(inputDegree.value) {
     let toD = inputRadioK.checked ? inputRadioK.value : inputRadioF.value;
